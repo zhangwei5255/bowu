@@ -1,0 +1,8 @@
+C:\TY\bowu\bowu\Test\bin\Debug\Test.exe.config
+C:\TY\bowu\bowu\Test\bin\Debug\Test.exe
+C:\TY\bowu\bowu\Test\bin\Debug\Test.pdb
+C:\TY\bowu\bowu\Test\obj\Debug\Test.Form1.resources
+C:\TY\bowu\bowu\Test\obj\Debug\Test.Properties.Resources.resources
+C:\TY\bowu\bowu\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+C:\TY\bowu\bowu\Test\obj\Debug\Test.exe
+C:\TY\bowu\bowu\Test\obj\Debug\Test.pdb

@@ -1,0 +1,17 @@
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\bin\Debug\YMK.XmlSerialization.dll
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\bin\Debug\YMK.XmlSerialization.pdb
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Debug\ResolveAssemblyReference.cache
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.dll
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.pdb
+C:\JPBook2\Source2013\JPBook2.1\JPBook2.1.0\Lib\Debug\YMK.XmlSerialization.dll
+C:\JPBook2\Source2013\JPBook2.1\JPBook2.1.0\Lib\Debug\YMK.XmlSerialization.pdb
+C:\JPBook2\Source2013\JPBook2.1\JPBook2.1.0\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.dll
+C:\JPBook2\Source2013\JPBook2.1\JPBook2.1.0\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.pdb
+C:\JPBook2\Source2013\JPBook2.1\JPBook2.1.0\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.csprojResolveAssemblyReference.cache
+C:\TY\bowu\bowu\Lib\Debug\YMK.XmlSerialization.dll
+C:\TY\bowu\bowu\Lib\Debug\YMK.XmlSerialization.pdb
+C:\TY\bowu\bowu\YMK.Lib\YMK.XmlSerialization.dll
+C:\TY\bowu\bowu\YMK.Lib\YMK.XmlSerialization.pdb
+C:\TY\bowu\bowu\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.dll
+C:\TY\bowu\bowu\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.pdb
+C:\TY\bowu\bowu\YMK.XmlSerialization\obj\Debug\YMK.XmlSerialization.csprojResolveAssemblyReference.cache

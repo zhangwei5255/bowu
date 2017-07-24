@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90C50D11-1432-4DC7-B9E7-48A1F860597D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Win.YMK.Controls</RootNamespace>
+    <AssemblyName>YMK.Controls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\YMK.Lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buttons\RecessEditorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Buttons\RecessEditorControl.designer.cs">
+      <DependentUpon>RecessEditorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buttons\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Buttons\VerticalString.cs" />
+    <Compile Include="Calendars\Calendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendars\Calendar.designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Emails\ComponentException.cs" />
+    <Compile Include="Emails\EasyEmail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Emails\EasyEmail.Designer.cs">
+      <DependentUpon>EasyEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emails\MailException.cs" />
+    <Compile Include="Emails\MailInformation.cs" />
+    <Compile Include="Emails\MailMessenger.cs" />
+    <Compile Include="Emails\MailSender.cs" />
+    <Compile Include="Emails\MailSenderImpl.cs" />
+    <Compile Include="Emails\MailXmlParser.cs" />
+    <Compile Include="Emails\Message\AbstractMessageManager.cs" />
+    <Compile Include="Emails\Message\CacheMessageManager.cs" />
+    <Compile Include="Emails\Message\MessageInformation.cs" />
+    <Compile Include="Emails\Message\MessageManager.cs" />
+    <Compile Include="Grids\Behaviors\Behavior.cs" />
+    <Compile Include="Grids\DataGridViewCells\CalendarCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewAlpNumCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewCurrencyCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewDateCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewImageCellEx.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewIntegerCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewMaskedCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewMultiMaskedCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewNumericCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewRichTextBoxCell.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="Grids\DataGridViewCells\DataGridViewTimeCell.cs" />
+    <Compile Include="Grids\DataGridViewColumns\CalendarColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewAlpNumColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewCurrentcyColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewDateColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewImageColumnEx.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewIntegerColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewMaskedColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewMultiMaskedColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewNumericColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewRichTextBoxColumn.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewTextBoxColumnEx.cs" />
+    <Compile Include="Grids\DataGridViewColumns\DataGridViewTimeColumn.cs" />
+    <Compile Include="Grids\DataGridViewEditingCtrols\CalendarEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewAlpNumEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewCurrencyEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewDateEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewIntegerEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewMaskedEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewMultiMaskedEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewNumericEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewRichTextBoxEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\DataGridViewEditingCtrols\DataGridViewTimeEditingCotrol.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\Exports\ExportToExcel.cs" />
+    <Compile Include="Grids\FrmGridColumnHeader_TEST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grids\FrmGridColumnHeader_TEST.Designer.cs">
+      <DependentUpon>FrmGridColumnHeader_TEST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grids\FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grids\FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grids\GridViewExt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Grids\GridViewExt.Designer.cs">
+      <DependentUpon>GridViewExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grids\RichTextBoxPrinter.cs" />
+    <Compile Include="HttpImages\HttpImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HttpImages\HttpImage.designer.cs">
+      <DependentUpon>HttpImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputMan\Behaviors\AlphanumericBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\Behavior.cs" />
+    <Compile Include="InputMan\Behaviors\CurrencyBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\DateBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\DateTimeBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\IntegerBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\MaskedBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\NumericBehavior.cs" />
+    <Compile Include="InputMan\Behaviors\TimeBehavior.cs" />
+    <Compile Include="InputMan\Selection.cs" />
+    <Compile Include="InputMan\TextBoxs\AlphanumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\CurrencyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\DateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\DateTimeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\IntegerTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\MaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\MultiMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\StringTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InputMan\TextBoxs\TimeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NetWorkings\Base\ClientBase.cs" />
+    <Compile Include="NetWorkings\Base\ServerBase.cs" />
+    <Compile Include="NetWorkings\Bean\ClientInfo.cs" />
+    <Compile Include="NetWorkings\Delegates.cs" />
+    <Compile Include="NetWorkings\INPClient.cs" />
+    <Compile Include="NetWorkings\INPServer.cs" />
+    <Compile Include="NetWorkings\NetworkEventArgs.cs" />
+    <Compile Include="Grids\PagingBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grids\PagingBar.designer.cs">
+      <DependentUpon>PagingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichTextBoxs\RicherTextBoxImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxs\RicherTextBoxStatus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RichTextBoxs\RicherTextBoxStatus.designer.cs">
+      <DependentUpon>RicherTextBoxStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RichTextBoxs\RichTextBoxExtended.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreeViews\Class1.cs" />
+    <Compile Include="TreeViews\DreamTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViews\DreamTreeView.designer.cs">
+      <DependentUpon>DreamTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViews\TreeEdits\DropDownTreeNode.cs" />
+    <Compile Include="TreeViews\TreeEdits\TreeCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViews\TreeEdits\TreeDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViews\TreeEdits\TreeLabelEdit.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TreeViews\TreeEdits\TreeLabelEdit.Designer.cs">
+      <DependentUpon>TreeLabelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViews\TreeKeys.cs" />
+    <Compile Include="TreeViews\TreeViewSerializer.cs" />
+    <Compile Include="WebBrowsers\WebBrowser2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Buttons\RecessEditorControl.resx">
+      <DependentUpon>RecessEditorControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grids\FrmGridColumnHeader_TEST.resx">
+      <DependentUpon>FrmGridColumnHeader_TEST.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HttpImages\HttpImage.resx">
+      <DependentUpon>HttpImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grids\PagingBar.resx">
+      <DependentUpon>PagingBar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextBoxs\RicherTextBoxStatus.resx">
+      <DependentUpon>RicherTextBoxStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RichTextBoxs\RichTextBoxExtended.resx">
+      <DependentUpon>RichTextBoxExtended.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViews\DreamTreeView.resx">
+      <DependentUpon>DreamTreeView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Buttons\Images\RoundButton.bmp" />
+    <Content Include="Buttons\Images\RoundButtonRecess0.bmp" />
+    <Content Include="Buttons\Images\RoundButtonRecess2.bmp" />
+    <Content Include="Buttons\Images\RoundButtonRecess3.bmp" />
+    <Content Include="Buttons\Images\RoundButtonRecess4.bmp" />
+    <Content Include="Buttons\Images\RoundButtonRecess5.bmp" />
+    <Content Include="RichTextBoxs\images\bold.gif" />
+    <Content Include="RichTextBoxs\images\center.gif" />
+    <Content Include="RichTextBoxs\images\Colors.gif" />
+    <Content Include="RichTextBoxs\images\colors2.gif" />
+    <Content Include="RichTextBoxs\images\copy.gif" />
+    <Content Include="RichTextBoxs\images\cut.gif" />
+    <Content Include="RichTextBoxs\images\font.gif" />
+    <Content Include="RichTextBoxs\images\fontSize.gif" />
+    <Content Include="RichTextBoxs\images\Image.gif" />
+    <Content Include="RichTextBoxs\images\italic.gif" />
+    <Content Include="RichTextBoxs\images\left.gif" />
+    <Content Include="RichTextBoxs\images\open.gif" />
+    <Content Include="RichTextBoxs\images\paste.gif" />
+    <Content Include="RichTextBoxs\images\print.gif" />
+    <Content Include="RichTextBoxs\images\Redo.gif" />
+    <Content Include="RichTextBoxs\images\RichTextBoxExtended.bmp" />
+    <Content Include="RichTextBoxs\images\RichTextBoxExtended.ico" />
+    <Content Include="RichTextBoxs\images\right.gif" />
+    <Content Include="RichTextBoxs\images\save.gif" />
+    <Content Include="RichTextBoxs\images\stamp.gif" />
+    <Content Include="RichTextBoxs\images\stamp2.gif" />
+    <Content Include="RichTextBoxs\images\strikeout.gif" />
+    <Content Include="RichTextBoxs\images\underline.gif" />
+    <Content Include="RichTextBoxs\images\Undo.gif" />
+    <Content Include="TreeViews\bmp\0.bmp" />
+    <Content Include="TreeViews\bmp\1.bmp" />
+    <Content Include="TreeViews\bmp\2.bmp" />
+    <Content Include="TreeViews\bmp\3.bmp" />
+    <Content Include="TreeViews\bmp\5.bmp" />
+    <Content Include="TreeViews\bmp\6.bmp" />
+    <Content Include="TreeViews\bmp\tcgg.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RichTextBoxs\images\psd\bold.psd" />
+    <None Include="RichTextBoxs\images\psd\Button2.psd" />
+    <None Include="RichTextBoxs\images\psd\Button2SMALL.psd" />
+    <None Include="RichTextBoxs\images\psd\center.psd" />
+    <None Include="RichTextBoxs\images\psd\colors2.psd" />
+    <None Include="RichTextBoxs\images\psd\copy.psd" />
+    <None Include="RichTextBoxs\images\psd\cut.psd" />
+    <None Include="RichTextBoxs\images\psd\font.psd" />
+    <None Include="RichTextBoxs\images\psd\fontSize.psd" />
+    <None Include="RichTextBoxs\images\psd\icon.psd" />
+    <None Include="RichTextBoxs\images\psd\Image.psd" />
+    <None Include="RichTextBoxs\images\psd\italic.psd" />
+    <None Include="RichTextBoxs\images\psd\left.psd" />
+    <None Include="RichTextBoxs\images\psd\open.psd" />
+    <None Include="RichTextBoxs\images\psd\paste.psd" />
+    <None Include="RichTextBoxs\images\psd\print.psd" />
+    <None Include="RichTextBoxs\images\psd\pspbrwse.jbf" />
+    <None Include="RichTextBoxs\images\psd\Redo.psd" />
+    <None Include="RichTextBoxs\images\psd\right.psd" />
+    <None Include="RichTextBoxs\images\psd\save.psd" />
+    <None Include="RichTextBoxs\images\psd\stamp.psd" />
+    <None Include="RichTextBoxs\images\psd\stamp2.psd" />
+    <None Include="RichTextBoxs\images\psd\strikeout.psd" />
+    <None Include="RichTextBoxs\images\psd\underline.psd" />
+    <None Include="RichTextBoxs\images\psd\Undo.psd" />
+    <None Include="RichTextBoxs\images\psd\vssver2.scc" />
+    <None Include="RichTextBoxs\images\vssver2.scc" />
+    <None Include="TreeViews\bmp\chendat.dat" />
+    <None Include="TreeViews\bmp\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMK.Commons\YMK.Commons.csproj">
+      <Project>{224F86FA-2648-4EFD-BA0B-959E38353E6B}</Project>
+      <Name>YMK.Commons</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\YMK.XmlSerialization\YMK.XmlSerialization.csproj">
+      <Project>{567C263A-63EE-4CE7-8085-98CAE03D3701}</Project>
+      <Name>YMK.XmlSerialization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RichTextBoxs\images\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

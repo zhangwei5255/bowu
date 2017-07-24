@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{053371BF-DF21-44EE-9A73-0844FA256F6A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YMK.FrameWork</RootNamespace>
+    <AssemblyName>YMK.FrameWork</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\YMK.Lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\libs\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net1210">
+      <HintPath>..\packages\libs\Common.Logging.Log4Net1210.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\packages\libs\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\packages\libs\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Pirate">
+      <HintPath>..\packages\libs\Pirate.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\packages\libs\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\packages\libs\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\packages\libs\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BaseBiz.cs" />
+    <Compile Include="BLL\IBaseBiz.cs" />
+    <Compile Include="Commons\Contexts\AppServiceContext.cs" />
+    <Compile Include="Commons\Contexts\BaseCommonContext.cs" />
+    <Compile Include="Commons\Contexts\Contracts\IBaseCommonContext.cs" />
+    <Compile Include="Commons\Contexts\IbatisSqlMapContext.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Commons\Contexts\InfrastructureContext.cs" />
+    <Compile Include="Commons\Contexts\Utils\ContextFactory.cs" />
+    <Compile Include="Commons\Contexts\Utils\FrameworkConfigInfo.cs" />
+    <Compile Include="Commons\Contexts\Utils\SpringContextWrapper.cs" />
+    <Compile Include="Commons\Utils\Configuration\FrameworkCnfgInfoReader.cs" />
+    <Compile Include="Commons\Utils\Configuration\ReadConfigInfoHelper.cs" />
+    <Compile Include="Commons\Utils\ExceptionHandler\ExceptionAdvice.cs" />
+    <Compile Include="Commons\Utils\ExceptionHandler\YmkException.cs" />
+    <Compile Include="Commons\Utils\InstanceDictionary.cs" />
+    <Compile Include="Commons\Utils\LogFactory.cs" />
+    <Compile Include="Commons\Utils\Logging\TraceMethodExecuteLoggerAdvice.cs" />
+    <Compile Include="Commons\Utils\StringTypeHandlerCallback.cs" />
+    <Compile Include="EntityBean\BaseDomainObject.cs" />
+    <Compile Include="EntityBean\BaseEntity.cs" />
+    <Compile Include="EntityBean\BusinessRules\BusinessRule.cs" />
+    <Compile Include="EntityBean\Contracts\IBaseEntity.cs" />
+    <Compile Include="EntityBean\Contracts\IDomainObject.cs" />
+    <Compile Include="EntityBean\Identities\Contracts\IIdentity.cs" />
+    <Compile Include="EntityBean\TblAudioFile.cs" />
+    <Compile Include="EntityBean\TblBook.cs" />
+    <Compile Include="EntityBean\TblDirect.cs" />
+    <Compile Include="EntityBean\TblExpression.cs" />
+    <Compile Include="EntityBean\TblLession.cs" />
+    <Compile Include="EntityBean\TblRole.cs" />
+    <Compile Include="EntityBean\TblText.cs" />
+    <Compile Include="EntityBean\TblTree.cs" />
+    <Compile Include="EntityBean\TblUser.cs" />
+    <Compile Include="EntityBean\TblWord.cs" />
+    <Compile Include="EntityBean\TblWordKind.cs" />
+    <Compile Include="EntityBean\TTblWord.cs" />
+    <Compile Include="FormBean\BaseFormBean.cs" />
+    <Compile Include="Infrastructure\Contexts\BaseDataContext.cs" />
+    <Compile Include="Infrastructure\Contexts\CoreDataContext.cs" />
+    <Compile Include="Infrastructure\Contexts\Contracts\IDataContext.cs" />
+    <Compile Include="Infrastructure\Contracts\BaseDataMapper.cs" />
+    <Compile Include="Infrastructure\Contracts\IDataMapper.cs" />
+    <Compile Include="Infrastructure\Contracts\IInfrastructureFactory.cs" />
+    <Compile Include="Infrastructure\Contracts\InfrastructureFactory.cs" />
+    <Compile Include="Infrastructure\IdentityMap.cs" />
+    <Compile Include="Infrastructure\InfrastructureFactory.cs" />
+    <Compile Include="Infrastructure\JPBookDataMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\Class1.cs" />
+    <Compile Include="Tables\tbl_audio_file.cs" />
+    <Compile Include="Tables\tbl_book.cs" />
+    <Compile Include="Tables\tbl_direct.cs" />
+    <Compile Include="Tables\tbl_expression.cs" />
+    <Compile Include="Tables\tbl_lession.cs" />
+    <Compile Include="Tables\tbl_role.cs" />
+    <Compile Include="Tables\tbl_text.cs" />
+    <Compile Include="Tables\tbl_tree.cs" />
+    <Compile Include="Tables\tbl_user.cs" />
+    <Compile Include="Tables\tbl_word.cs" />
+    <Compile Include="Tables\tbl_word_kind.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YMK.Commons\YMK.Commons.csproj">
+      <Project>{224f86fa-2648-4efd-ba0b-959e38353e6b}</Project>
+      <Name>YMK.Commons</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

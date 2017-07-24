@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <msgs>
+    <items>
+   <!-- XMLの改行コード:「&#xA;」==> C#の\n -->
+    <!--Use &amp; instead of & -->
+    <!-- <add key="YAHOO_RATE\" value="http://info.finance.yahoo.co.jp/fx/convert/?a=1&amp;s=JPY&amp;t=CNY" /> -->
+  <!-- インフォーメーション分-->
+      <msg id='INFO_2000' value='必須入力項目です。入力して下さい。' />
+      <msg id='INFO_2101' value='半角片仮名を入力してくだい。' />
+      <msg id='INFO_2102' value='全角の単語を入力してくだい。' />
+      <msg id='INFO_2201' value='入力のメールアドレスは無効です。' />
+      <msg id='INFO_2202' value='入力の電話番号は無効です。' />
+      <msg id='INFO_2203' value='入力のユーザIDが既存にありました。' />
+      <msg id='INFO_2204' value='入力のユーザIDが存在しません。' />
+      <msg id='INFO_2205' value='パスワードがエラーです。' />
+      <msg id='INFO_2206' value='二つの入力パスワードが一致しません。&#xA;ご確認お願いします。' />
+      <msg id='INFO_2207' value='少なくとも一つの更新行をチェックしてください。' />
+      <msg id='INFO_2208' value='初期化パスワードを指定メールに送るのは、失敗ですが、&#xA; メールアドレスとネットワークを確認してください。' />
+      <msg id='INFO_2209' value='メールを開けて、パスワードを取得してください。' />
+      <msg id='INFO_2301' value='このプロジェクトが既に起動されています。' />
+      <msg id='INFO_2302' value='タスク名が既に存在します。' />
+      <msg id='INFO_8001' value='更新してしまいました。' />
+  <!-- エラー分-->
+      <msg id='ERR_9000' value='システムエラーが起こしました。&#xA;システム管理者までご連絡ください。' />
+  <!-- 確認分-->
+      <msg id='Q_1000' value='入力中のデータを破棄し、前画面へ戻ります。&#xA;よろしいですか？' />
+      <msg id='Q_1100' value='登録して宜しいですか？' />
+      <msg id='Q_1101' value='更新して宜しいですか？' />
+      <msg id='Q_1102' value='削除して宜しいですか？' />
+    </items>
+  </msgs>
+</configuration>

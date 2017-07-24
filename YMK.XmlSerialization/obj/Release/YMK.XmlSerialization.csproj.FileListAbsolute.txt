@@ -1,0 +1,5 @@
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\bin\Release\YMK.XmlSerialization.dll
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\bin\Release\YMK.XmlSerialization.pdb
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Release\ResolveAssemblyReference.cache
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Release\YMK.XmlSerialization.dll
+C:\JPBook2\ソース\JPBook2\YMK.XmlSerialization\obj\Release\YMK.XmlSerialization.pdb
